@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tạo thanh điều hướng - Collapse</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<style rel="stylesheet" type="text/css">
+		body{
+			margin-top: 70px;
+		}
+		.marginBottom-0 {margin-bottom:0;}
+		.dropdown-submenu{position:relative;}
+		.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+		.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+		.dropdown-submenu:hover>a:after{border-left-color:#555;}
+		.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top"> 
+  		<div class="container-fluid">
+		    <div class="navbar-header">
+		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+     		      </button>
+		      <a class="navbar-brand" href="Trang_chu.html">Shop Thiên Thanh</a>
+		    </div>
+		     <div class="collapse navbar-collapse" id="myNavbar"> <!-- bổ sung -->
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Trang chủ</a></li>
+		        <li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		        		Quần áo nữ <span class="caret"></span> <!-- tạo icon cho dropdown -->
+		        	</a>
+		        	<ul class="dropdown-menu">
+			            <li><a href="#">Áo thun</a></li>
+			            <li><a href="#">Áo Sơ mi</a></li>
+			            <!-- Tạo tiếp submenu -->
+			            <li class="dropdown dropdown-submenu">
+			            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Quần tây</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Tây ống nhỏ</a></li>
+								<li><a href="#">Tây ống to</a></li>
+								<!-- Tạo tiếp submenu cấp 2-->
+								<li class="dropdown dropdown-submenu">
+									<a href="#" href="#" class="dropdown-toggle" data-toggle="dropdown">Tây ống loa</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Màu đỏ</a></li>
+										<li><a href="#">Màu xanh</a></li>
+										<li><a href="#">Màu đen</a></li>
+										<li><a href="#">Màu hồng</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Tây thun</a></li>
+							</ul>            	
+			            </li>
+			            <li><a href="#">Quần jean</a></li>
+	  	           </ul>
+		        </li>
+		        <li><a href="#">Quần áo nam</a></li>
+		        <li><a href="#">Phụ kiện</a></li>
+		        <li><a href="#">Tin tức sự kiện</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-inbox"></span>Liên hệ</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+			      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+   		      </ul>
+	    	</div>
+  		</div>
+	 </nav>
+	 <div class="container">
+	 	<h2>Tạo thanh điều hướng có Collapse</h2>
+	 	<h4>Bổ sung nút Button trong navbar-header</h4>
+	 	<h4>Bổ sung tag <mark> &lt; div class="collapse navbar-collapse" id="myNavbar" &gt; </mark>để bọc thực đơn lại</h4>
+	 	<h2>Right-Aligned Navigation Bar</h2>
+		<p>
+			Sử dụng class <b>.navbar-right</b> 
+		</p>
+	</div>
+	<script src="Script/jquery-1.9.1.min.js"></script> 
+	<script src="Bootstrap/js/bootstrap.min.js"></script>
+	<!--Viết cho menu đa cấp (multi level menu) -->
+	 <script>  
+	 	(function($){
+			$(document).ready(function(){
+				$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+					event.preventDefault(); 
+					event.stopPropagation(); 
+					$(this).parent().siblings().removeClass('open');
+					$(this).parent().toggleClass('open');
+					});
+				});
+		})(jQuery);
+	</script>
+
+</body>
+</html>
+<!-- Tạo thực đơn nhiều cấp, sử dụng Bootstrap
+	- Link tham khảo: http://www.bootply.com/nZaxpxfiXz
+	- Tìm ==> gõ: how to create multi level menu in bootstrap
+-->
+
+
+
+
+
+
+
+
+

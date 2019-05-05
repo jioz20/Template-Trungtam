@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>animation</title>
+		<style rel="stylesheet">
+		 	/*Thay đổi định hướng của container Flex box, lúc đó các item cũng thay đổi trật tự theo*/
+			/*body{
+			direction: rtl;	   right to left
+			}
+			*/
+			/*Theo hướng từ trái sang phải*/
+			.flex-container {
+			    display: -webkit-flex;
+			    display: flex;
+			   background-color: #ffd9b3;
+			   padding: 10px;
+			}
+			.flex-item {
+			    background-color: #ff8000;
+			    margin: 10px;
+			    padding: 10px;
+			}
+			/*Theo hướng từ phải sang trái: dùng flex-direction*/
+			.flex-container-right {
+			    display: -webkit-flex;
+			    display: flex;
+			    -webkit-flex-direction: row-reverse;   
+			    flex-direction: row-reverse;
+			    background-color: #ffd9b3;
+			}
+			/*Theo hướng cột*/
+			.flex-container-column {
+			    display: -webkit-flex;
+			    display: flex;
+			    -webkit-flex-direction: column;   
+			    flex-direction: column;
+			    background-color: #ffd9b3;
+			}
+			/*Theo hướng cột đảo ngược*/
+			.flex-container-column-reverse {
+			    display: -webkit-flex;
+			    display: flex;
+			    -webkit-flex-direction: column-reverse;   
+			    flex-direction: column-reverse;
+			    background-color: #ffd9b3;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- <h3>flex-container cơ bản</h3>
+		<div class="flex-container">
+			  <div class="flex-item">flex item 1</div>
+			  <div class="flex-item">flex item 2</div>
+			  <div class="flex-item">flex item 3</div>  
+			  <div class="flex-item">flex item 4</div>
+		</div> -->
+		<!-- <h3>flex-container-right</h3>
+		<div class="flex-container-right">
+			  <div class="flex-item">flex item 1</div>
+			  <div class="flex-item">flex item 2</div>
+			  <div class="flex-item">flex item 3</div>  
+		</div> -->
+		<!-- <h3>flex-container-column</h3>
+		<div class="flex-container-column">
+			  <div class="flex-item">flex item 1</div>
+			  <div class="flex-item">flex item 2</div>
+			  <div class="flex-item">flex item 3</div>
+  			  <div class="flex-item">flex item 4</div>  
+			  <div class="flex-item">flex item 5</div>  
+		</div> -->
+		<h3>flex-container-column-reverse</h3>
+		<div class="flex-container-column-reverse">
+			  <div class="flex-item">flex item 1</div>
+			  <div class="flex-item">flex item 2</div>
+			  <div class="flex-item">flex item 3</div>  
+  			  <div class="flex-item">flex item 4</div>  
+			  <div class="flex-item">flex item 5</div>  
+		</div> 
+		<br />
+		Học viên xem thêm các thuộc tính khác nữa trên trang: 
+		<a href="http://www.w3schools.com/css/css3_flexbox.asp" target="_blank"> http://www.w3schools.com/css/css3_flexbox.asp</a>
+	</body>
+</html>

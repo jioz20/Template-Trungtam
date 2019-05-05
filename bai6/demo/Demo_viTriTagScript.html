@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ví dụ về script</title>
+
+	<script lang="JavaScript">
+		document.write('JavaScript đặt trong tag head ');    //in dòng văn bản ra màn hình
+	</script>
+	
+</head>
+<body>
+	<h1>Đây là ví dụ minh họa về vị trí thi hành của JavaScript</h1>
+	
+	<script lang="javascript">
+		document.write('JavaScript đặt trong tag body, trước đoạn văn bản ');
+		//cauchao.innerText = "Chúc mừng năm mới";  ==> NO OK vì js chưa hiểu id cauchao
+	</script>
+	
+	<h2 id="cauchao" style="color: red">Happy new year !!!</h2>
+	
+	<p style="font-weight:bold">Bánh kem là món bánh rất phổ biến trong đời sống. Trong tiệc cưới, sinh nhật, ăn hỏi, 
+		kỉ niệm, khai trương... người ta đều dùng bánh kem như một phần quan trọng không thể thiếu. Chiếc bánh vừa là khởi đầu ngọt ngào, vừa là dư vị mềm mại cho những niềm vui lan tỏa.
+		Ngày nay, bánh kem có rất nhiều loại, nhiều mẫu mã. Có vô số loại bánh kem với những tạo hình khác nhau cho khách hàng lựa chọn. 
+		Cũng chính vì thế mà loại bánh này rất có tiềm năng khi kinh doanh, mở tiệm.
+	</p>
+
+	<script lang="javascript">
+		document.write('JavaScript đặt trong tag body, sau đoạn văn bản ');
+		cauchao.innerText = "Chúc mừng năm mới";
+	</script>
+	<br/>
+	<script lang="JavaScript" src="Thuvien.js"></script>
+</body>
+</html>

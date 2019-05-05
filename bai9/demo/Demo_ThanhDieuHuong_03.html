@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tạo thanh điều hướng - Collapse</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<style rel="stylesheet" type="text/css">
+		body{
+			margin-top: 70px;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top"> 
+  		<div class="container-fluid">
+		    <div class="navbar-header">
+		    	<!-- Bổ sung nút này -->
+		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!--data-target trỏ tới id của thực đơn--> 
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+     		    </button>
+		      <a class="navbar-brand" href="Trang_chu.html">Shop Thiên Thanh</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar"> <!-- bổ sung -->
+		     	<!-- Thực đơn bên trái --> 
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Trang chủ</a></li>
+			        <li class="dropdown">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			        		Quần áo nữ <span class="caret"></span> <!-- tạo icon cho dropdown -->
+			        	</a>
+			        	<ul class="dropdown-menu">
+				            <li><a href="#">Áo thun</a></li>
+				            <li><a href="#">Áo Sơ mi</a></li>
+				            <li><a href="#">Quần tây</a></li>
+				            <li><a href="#">Quần jean</a></li>
+		  	           </ul>
+			        </li>
+			        <li><a href="#">Quần áo nam</a></li>
+			        <li><a href="#">Phụ kiện</a></li>
+			        <li><a href="#">Tin tức sự kiện</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-inbox"></span>Liên hệ</a></li>
+			      </ul>
+			      <!-- Thực đơn bên phải -->
+			      <ul class="nav navbar-nav navbar-right">
+				      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	   		      </ul>
+	    	</div>
+  		</div>
+	 </nav>
+	 <div class="container">
+	 	<h2>Tạo thanh điều hướng có Collapse</h2>
+	 	<h4>Bổ sung nút Button trong navbar-header</h4>
+	 	<h4>Bổ sung tag <mark> &lt; div class="collapse navbar-collapse" id="myNavbar" &gt; </mark>để bọc thực đơn lại</h4>
+	 	<h2>Right-Aligned Navigation Bar</h2>
+		<p>
+			Sử dụng class <b>.navbar-right</b> 
+		</p>
+	</div>
+	<script src="Script/jquery-1.9.1.min.js"></script> 
+	<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

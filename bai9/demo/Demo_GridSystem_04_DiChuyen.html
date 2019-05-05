@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>GridSystem_04</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<!-- Khai báo Bootstrap: local -->
+		<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<style rel="stylesheet" type="text/css">
+			.mainContainer{
+				background-color: #e5ecff;
+			}
+			div{
+				border: 1px solid #003ee6; margin-bottom:5px;
+				background-color: #ff66cc; 
+			}
+			.dong{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p class="container-fluid"><h2>DEMO DI CHUYỂN CỘT</h2>
+			<h5 class="text-info">Demo minh họa hình ảnh được sắp xếp chồng lên nhau tùy theo thiết bị.<br />
+				Nếu trên desktop thì chỉ lấy 8 cột và di chuyển về tay phải 2 cột 
+			</h5>
+		</p>
+		<section class="container mainContainer">
+			<div class="row dong" >
+			  <div class="col-xs-12 col-md-8 col-md-offset-2" style="background-color: #ffffff" >
+			  	  <img src="images/Nam_01.jpg" />
+				  <img src="images/Nam_02.jpg" />
+				  <img src="images/Nam_03.jpg" />
+				  <img src="images/Nam_04.jpg" />
+				  <img src="images/Nam_05.jpg" />
+				  <img src="images/Nam_06.jpg" />
+				  <img src="images/Nam_07.jpg" />
+				  <img src="images/Nam_08.jpg" />
+			  </div>
+			</div>
+		</section>
+
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

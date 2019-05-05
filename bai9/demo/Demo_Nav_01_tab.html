@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Điều hướng</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<style rel="stylesheet" type="text/css">
+		.nen{
+			border: 1px solid #003ee6; margin-bottom:5px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container nen">
+		<div class="row">
+			<div class="col-md-4">	
+			  	<h2>Điều hướng dạng cơ bản</h2>
+			  	<p>Dùng class="nav"</p>
+				<ul class="nav">
+					<li><a href="#">Trang Chủ</a></li>	
+					<li><a href="#">Quần áo nam</a></li>
+					<li><a href="#">Quần áo nữ</a></li>
+					<li><a href="#">Phụ kiện thời trang</a></li>
+					<li><a href="#">Tin tức và sự kiện</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8">	
+			  	<h2>Điều hướng dạng cơ bản, ngang</h2>
+			  	<p>Dùng class="list-inline"</p>
+				<ul class="list-inline"> 
+					<li><a href="#">Trang Chủ</a></li>	
+					<li><a href="#">Quần áo nam</a></li>
+					<li><a href="#">Quần áo nữ</a></li>
+					<li><a href="#">Phụ kiện thời trang</a></li>
+					<li><a href="#">Tin tức và sự kiện</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">	
+			  	<h2>Điều hướng dạng tab</h2>
+			  	<p>Dùng class="nav nav-tabs"</p>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Trang Chủ</a></li>	
+					<li><a href="#">Quần áo nam</a></li>
+					<li><a href="#">Quần áo nữ</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6">	
+			  	<h2>Điều hướng dạng tab với DropDown menu</h2>
+			  	<p>Dùng class="nav nav-tabs" và class="dropdown" cho tag li</p>
+				<ul class="nav nav-tabs"> 
+					<li><a href="#">Trang Chủ</a></li>	
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Quần áo nam
+							<span class="caret"> </span> <!-- Khai báo Glyphicons -->
+						</a>
+						 <ul class="dropdown-menu">
+						      <li><a href="#">Áo thun</a></li>
+						      <li><a href="#">Áo sơ mi</a></li>
+						      <li><a href="#">Quần tây</a></li> 
+						      <li><a href="#">Quần jean</a></li>
+					    </ul>
+					</li>
+					<li><a href="#">Quần áo nữ</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

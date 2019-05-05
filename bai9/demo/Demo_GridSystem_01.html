@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>GridSystem_01</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<!-- Khai báo Bootstrap: local -->
+		<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<style rel="stylesheet" type="text/css">
+			.mainContainer{
+				background-color: #e5ecff;
+			}
+			div{
+				border: 1px solid #003ee6; margin-bottom:5px;
+				background-color: #ff66cc; 
+			}
+			.dong{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p class="container-fluid">Sử dụng một tập hợp các class .col-md-*, bạn có thể tạo ra một hệ thống 
+			lưới cơ bản. Hệ thống này sẽ hiển thị chồng lên nhau trên các thiết bị di động và tablet
+			 (kích thước nhỏ) trước khi hiển thị dưới dạng hàng ngang trên màn hình máy tính (kích thước trung bình).
+			<h5 class="text-info">Demo này sử dụng khi thiết bị &lt; 992px, các cột xếp chồng lên nhau theo hàng ngang </h5>
+		</p>
+		<section class="container mainContainer">
+			<div class="row dong">
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			  <div class="col-md-1">.col-md-1</div>
+			</div>
+			<div class="row dong">
+			  <div class="col-md-8">.col-md-8</div>
+			  <div class="col-md-4">.col-md-4</div>
+			</div>
+			<div class="row dong">
+			  <div class="col-md-4">.col-md-4</div>
+			  <div class="col-md-4">.col-md-4</div>
+			  <div class="col-md-4">.col-md-4</div>
+			</div>
+			<div class="row dong">
+			  <div class="col-md-6">.col-md-6</div>
+			  <div class="col-md-6">.col-md-6</div>
+			</div>
+		</section>
+		
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

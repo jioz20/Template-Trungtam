@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS3 Transforms</title>
+<style> 
+	/* demo cơ bản*/
+	div
+	{
+		width:100px;
+		height:100px;
+		background:red;
+		
+		transition:width 2s;	/*Transition effect on the width property, duration: 2 seconds:*/
+		-moz-transition:width 2s; 
+		-webkit-transition:width 2s;
+		-o-transition:width 2s; 
+	}
+	div:hover
+	{
+		width:300px;
+		/*background-color: yellow*/
+	}
+
+	div#div2
+	{
+		width:100px;
+		height:100px;
+		background:red;
+		
+		transition:width 2s, background-color 5s;	/*Transition effect on the width property, duration: 2 seconds:*/
+		-moz-transition:width 2s, background-color 5s; 
+		-webkit-transition:width 2s, background-color 5s;
+		-o-transition:width 2s, background-color 5s; 
+	}
+	div#div2:hover
+	{
+		width:300px;
+		background-color: yellow
+	}
+
+ </style> 
+</head>
+
+<body>
+
+	<div> Một hiệu ứng</div>
+	<p> </p>
+	<div id="div2"> Hai hiệu ứng </div>
+	
+	<p>Rê chuột lên hình trên, bạn sẽ nhìn thấy hiệu ứng transition.</p>
+
+</body>
+</html>

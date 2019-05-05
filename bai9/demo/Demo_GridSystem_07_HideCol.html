@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>GridSystem_07</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<!-- Khai báo Bootstrap: local -->
+		<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<style rel="stylesheet" type="text/css">
+			.mainContainer{
+				background-color: #e5ecff;
+			}
+			div{
+				margin-bottom:5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p class="container-fluid"><h3>Ẩn các cột</h3>
+			<h5 class="text-info">Dùng lớp .hide-* . Với * tương ứng với xs, sm, md và lg
+ 			</h5>
+		</p>
+		<section class="container mainContainer">
+			<div class="row">
+				 <div class="col-md-12 hidden-xs hidden-sm" style="height: 100px; background-color:#0000cc;color: #FFFFFF">
+				   <h3>Thành phần Header, bị ẩn trên di động và tablet</h3>
+				 </div>
+			</div>
+			<div class="row">
+			  <div class="col-xs-12 col-sm-4" style="height: 400px;  background-color:#ff0066;color: #FFFFFF">
+			  	<h3>Danh sách chọn lựa </h3>
+			  </div>
+			  <div class="col-xs-12 col-sm-8" style="height: 400px; background-color: #ffff80;">
+			  	<h3>Nội dung chính</h3>
+	  		  </div>
+			</div>
+			<div class="row">
+				 <div class="col-md-12 hidden-xs hidden-sm" style="height: 100px; background-color:#0000cc;color: #FFFFFF">
+				   <h3>Thành phần Hooter,  bị ẩn trên di động và tablet</h3>
+				 </div>
+			</div>
+		</section>
+		
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

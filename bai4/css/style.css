@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+/*Phần cung cấp cho học viên*/
+body {
+    font-family: Verdana,sans-serif;
+    font-size: 0.9em;
+	margin: auto;
+}
+.container {
+	width:auto;
+	margin: 0 auto;
+	position:relative;
+}
+header, footer {
+    padding: 10px;
+    color: white;
+    background-color: #183544;
+}
+section {
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+article {
+    background-color: white;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+	}
+
+nav li {
+		float: left;
+	}
+
+nav li a {
+		display: block;
+		color: #666;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+nav li a:hover:not(.active) {
+		background-color: #ddd;
+	}
+
+li a.active {
+		color: white;
+		background-color: #4CAF50;
+	}
+/* End Phần cung cấp cho học viên*/
+/* Bài 4.1 */
+.container
+{
+    margin: 5px auto;
+    padding-left: 95px;
+}
+.container .gallery
+{
+   width:  280px;
+   margin:  5px;
+   float:  left;
+   border: 1px solid #DDDDDD;
+}
+.container .gallery img
+{
+    width:  100%;
+    height: auto;
+}
+.container .gallery:hover
+{
+    border: 1px solid #777777  ;
+}
+div.desc
+{
+    padding: 17px;
+    text-align: center;
+}
+a.button:link, a.button:visited
+{
+    background-color: #66CC33 ;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.button:hover, a.button:active
+{
+    background-color: #009900 ;
+}
+
+a.button2:link, a.button2:visited
+{
+    background-color: #009900;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+a.button2:hover, a.button2:active
+{
+    background-color: #66CC33 ;
+}
+/* End: 4.1; */
+
+/* Begin: 4.2 */
+.chitiet .hinh .hinhlon img
+{
+    margin: 0px;
+    width:  420px;
+    height:  420px;
+}
+div.hinhnho
+{
+    width: 420px;
+    height: 70px;
+    text-align: center;
+}
+.chitiet .hinh .hinhnho img
+{
+    margin:  0px;
+    width: 61px;
+    height:  70px;
+}
+.chitiet .thongtin
+{
+    width: 620px;
+    height: 520px;
+    margin: 0 auto;
+    float: left;
+}
+.chitiet .hinh
+{
+    float: left;
+}
+p.price
+{
+font-family: Arial, sans-serif;
+    color: red;
+    font-size: 30px;
+    line-height: 22px;
+    padding-left: 25px;
+}
+/* End: 4.2 */
+
+/* Begin: 4.3; */
+.form
+{
+    background-color: #222222;
+}
+input
+{
+    width: 1000px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 7px 0 7px 0;
+    border: none; 
+}
+input[type=text], input[type=tel], input[type=email]
+{
+    padding-left: 15px;
+}
+input[type=submit]
+{
+    margin-top: 10px;
+    width: 15%;
+    background-color: #FFFF66;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea
+{
+    margin-top: 8px;
+    width:  1004px;
+    height:  150px;
+    padding: 10px 0 0 10px;
+    border-radius: 6px;
+}
+label
+{
+    color:  white;
+}
+input[type=submit]:hover
+{
+    background-color: #AAAAAA;
+}
+/* End: 4.3; */
+
+/* Begin: 4.4; */
+.bg-light-gray
+{
+    background-color: #EEEEEE;
+}
+div.container
+{
+    padding-right:  85px;
+}
+h3.section-subheading.text-muted
+{
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 16px;
+}
+h2.section-heading
+{
+    margin: -5px 0 5px 0;
+    font-size: 40px;
+}
+
+/* End: 4.4; */

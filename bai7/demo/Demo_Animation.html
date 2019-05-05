@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>slideUp demo</title>
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <style>
+ 		div{
+ 			border: 1px red solid;
+ 			width: 100px; height: 50px;
+ 		}
+      </style>
+</head>
+<body>    
+   <div id="clickme"> Click here </div>
+   <img id="book" src="../images/Hinh03.jpg" alt="" style="position: relative; left: 10px;">
+    <script>
+        $( "#clickme" ).click(function()
+        {
+              // $( "#book" ).animate({
+                    // opacity: "toggle",
+                    // left: "+=50",
+                    // height: "toggle"
+                  // }, 5000 
+               // );
+                  
+              $( "#book" ).animate({
+                    opacity: "toggle",
+                    left: "+=50",
+                    height: "toggle"
+              		}, 5000, function() {			//hàm xử lý khi thao tác này chấm đứt 					
+                    alert("Đã thực hiện xong");}
+              );
+        });
+</script>
+
+</body>
+</html>

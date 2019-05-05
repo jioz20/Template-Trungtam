@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tạo thanh điều hướng - cơ bản</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<style rel="stylesheet" type="text/css">
+		body{
+			margin-top: 70px;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top"> <!-- luôn luôn ở đầu trang -->
+  		<div class="container-fluid">
+		    <div class="navbar-header"> <!-- Tạo thanh header khi menu thu nhỏ -->
+		      <a class="navbar-brand" href="Trang_chu.html">Shop Thiên Thanh</a>
+		    </div>
+		    <!-- Thực đơn -->
+		    <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Trang chủ</a></li>
+		        <li><a href="#">Quần áo nữ</a></li>
+		        <li><a href="#">Quần áo nam</a></li>
+		        <li><a href="#">Phụ kiện</a></li>
+		        <li><a href="#">Tin tức sự kiện</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-inbox"></span>Liên hệ</a></li>
+		    </ul>
+	    </div>
+	 </nav>
+	 <div class="container">
+	 	<h2>Tạo thanh điều hướng cơ bản</h2>
+	 	<p>	<h4>Các class con hỗ trợ navigation:</h4>
+			<ul>
+				<li>navbar-default (Kiểu màu trắng)</li>
+				<li>navbar-inverse (Kiểu màu đen)</li>
+				<li>nav navbar-nav (Định dạng style cho phần menu ul,li) </li>
+				<li>navbar-toggle (Định dạng hiệu ứng menu xổ xuống) </li>
+			</ul>
+	 	</p>
+	 	<h4>Fixed Navigation Bar</h4>
+		<p>
+			Sử dụng class <b>.navbar-fixed-top</b> hoặc <b>.navbar-fixed-bottom</b> 
+		</p>
+	</div>
+	<script src="Script/jquery-1.9.1.min.js"></script> 
+	<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
